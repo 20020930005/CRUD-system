@@ -1,0 +1,156 @@
+/* General Styling for the Page */
+.SendPdfnew-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.SendPdfnew-container h1 {
+  font-size: 2.5em;
+  color: #007BFF;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.SendPdfnew-container h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.SendPdfnew-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SendPdfnew-form label {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.SendPdfnew-form input[type="text"],
+.SendPdfnew-form input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.SendPdfnew-form input[type="text"]:focus,
+.SendPdfnew-form input[type="file"]:focus {
+  border-color: #007BFF;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+.SendPdfnew-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.SendPdfnew-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.SendPdfnew-form button:active {
+  transform: translateY(1px);
+}
+
+/* PDF Display Section */
+.SendPdfnew-pdf-details {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.SendPdfnew-pdf-details h3 {
+  color: #dc3545;
+  font-size: 1.2em;
+}
+
+.SendPdfnew-pdf-details h4 {
+  color: #333;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.SendPdfnew-pdf-details button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.SendPdfnew-pdf-details button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.SendPdfnew-pdf-details button:active {
+  transform: translateY(1px);
+}
+
+/* Make the page responsive for mobile devices */
+@media (max-width: 768px) {
+  .SendPdfnew-container {
+    padding: 20px;
+  }
+
+  .SendPdfnew-container h1 {
+    font-size: 2em;
+  }
+
+  .SendPdfnew-container h2 {
+    font-size: 1.2em;
+  }
+
+  .SendPdfnew-form input[type="text"],
+  .SendPdfnew-form input[type="file"] {
+    padding: 10px;
+  }
+
+  .SendPdfnew-form button {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .SendPdfnew-pdf-details h4 {
+    font-size: 1em;
+  }
+
+  .SendPdfnew-pdf-details button {
+    padding: 8px;
+    font-size: 1em;
+  }
+}

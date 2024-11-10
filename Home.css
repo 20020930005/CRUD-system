@@ -1,0 +1,98 @@
+/* General styles for the home page */
+.home-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: #83a5ca;
+  color: white;
+  width: 100%;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-content p {
+  font-size: 1.2em;
+}
+
+/* About Us Section */
+.about-us {
+  width: 80%;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.about-us .section-title h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-us .about-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Definitions Section */
+.definitions {
+  width: 80%;
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.definitions .section-title h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.definitions .definitions-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.definitions .definitions-content li {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.definitions .definitions-content li strong {
+  color: #007BFF;
+}
+
+/* Footer Section */
+.footer {
+  width: 100%;
+  background-color: #89c4e9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .footer-content p {
+  margin: 5px;
+  font-size: 1em;
+}
+
+.footer .footer-content p:first-child {
+  font-weight: bold;
+}

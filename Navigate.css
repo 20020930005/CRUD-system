@@ -1,0 +1,92 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #007BFF; /* Blue background to match the hero section */
+  padding: 15px 0;
+  width: 100%;
+  position: sticky; /* Make navbar sticky */
+  top: 0; /* Stick to the top of the page */
+  z-index: 1000; /* Ensure navbar stays above other content */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff; /* White logo for contrast */
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navlist {
+  color: #fff; /* White text for navigation items */
+  text-decoration: none;
+  padding: 8px 12px;
+  font-size: 1.1em;
+  transition: color 0.3s ease, padding 0.3s ease;
+}
+
+/* Highlight on hover */
+.navlist:hover {
+  color: #f4f4f4; /* Lighter white color on hover */
+  padding-bottom: 12px; /* Add a little space at the bottom to emphasize hover effect */
+}
+
+/* Add underline effect on hover with color transition */
+.navlist::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #fff; /* White underline */
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.navlist:hover::after {
+  width: 100%;
+}
+
+/* Content styling */
+.content {
+  padding: 40px 20px; /* Added more padding for spacious look */
+  text-align: center;
+  background-color: #f4f4f4; /* Light grey background to match the overall design */
+}
+
+/* Ensure the content section is cohesive with other page sections */
+.content h1 {
+  font-size: 2em;
+  color: #333; /* Dark text color for headings */
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2em;
+  color: #555; /* Lighter text for paragraph */
+  line-height: 1.6;
+}

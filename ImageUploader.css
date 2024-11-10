@@ -1,0 +1,59 @@
+/* Container for the whole ImageUploader component */
+.image-uploader-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading for the gallery */
+.image-uploader-heading {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the form */
+.image-uploader-form {
+  margin-bottom: 20px;
+}
+
+.image-upload-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.image-upload-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-upload-button:hover {
+  background-color: #45a049;
+}
+
+/* Gallery styling */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.image-gallery-item {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery-item:hover {
+  transform: scale(1.1);
+}

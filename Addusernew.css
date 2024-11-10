@@ -1,0 +1,122 @@
+/* Styles specifically for the Add User New page */
+
+/* Container for the form */
+.ADD_form-container {
+  padding: 30px;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header Styles */
+.ADD_h1 {
+  font-size: 2em;
+  color: #007BFF;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.ADD_h2 {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Label styling */
+.ADD_label {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* Input field styles */
+.ADD_input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+/* Input hover and focus effects */
+.ADD_input:hover, .ADD_input:focus {
+  border-color: #007BFF;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Submit button styles */
+.ADD_button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Button hover effect */
+.ADD_button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Button active (on click) effect */
+.ADD_button:active {
+  transform: translateY(1px);
+}
+
+/* Styling for spacing between elements */
+.ADD_input + .ADD_input {
+  margin-top: 10px;
+}
+
+.ADD_form-container br {
+  margin-bottom: 20px;
+}
+
+/* Success message or alert style */
+.ADD_alert {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .ADD_form-container {
+    padding: 20px;
+  }
+
+  .ADD_h1 {
+    font-size: 1.8em;
+  }
+
+  .ADD_input {
+    padding: 10px;
+  }
+
+  .ADD_button {
+    padding: 12px;
+    font-size: 1em;
+  }
+}

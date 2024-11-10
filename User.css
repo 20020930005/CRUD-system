@@ -1,0 +1,117 @@
+/* User Detail Container Styles */
+.user-detail-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Wrapper to stack the user cards vertically */
+.user-detail-card-wrapper {
+  display: flex;
+  flex-direction: column;  /* Stack user cards vertically */
+  gap: 20px;  /* Space between each card */
+}
+
+/* Each individual user detail card */
+.user-detail-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;  /* Optional: to limit the width of each card */
+  margin: 0 auto;  /* Centers the card */
+  transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+
+.user-detail-card:hover {
+  transform: translateY(-10px);  /* Lift the card on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);  /* Enhanced shadow */
+}
+
+/* User info section */
+.user-info h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #333;
+}
+
+.user-id, .user-name, .user-gmail, .user-age, .user-address {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Action Buttons (Update, Delete) */
+.actions {
+  margin-top: 15px;
+}
+
+.update-link,
+.delete-button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.update-link {
+  background-color: #007BFF; /* Blue for Update */
+  color: white;
+}
+
+.update-link:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);  /* Slight lift effect */
+}
+
+.delete-button {
+  background-color: #FF6347; /* Tomato Red for Delete */
+  color: white;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #d9534f;
+  transform: translateY(-3px);  /* Slight lift effect */
+}
+
+/* Button Styling for Download Report & Send WhatsApp */
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 15px 10px;
+}
+
+button:hover {
+  transform: translateY(-5px);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Download Report Button */
+button:nth-child(1) {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+button:nth-child(1):hover {
+  background-color: #218838;
+}
+
+/* Send WhatsApp Message Button */
+button:nth-child(2) {
+  background-color: #25d366; /* WhatsApp Green */
+  color: white;
+}
+
+button:nth-child(2):hover {
+  background-color: #128c7e;
+}
